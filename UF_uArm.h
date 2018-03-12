@@ -79,7 +79,10 @@ public:
 	void init();    // initialize the uArm position
     void calibration();  //
 	void recordingMode(unsigned char _sampleDelay = 50);
-	void setPosition(double _stretch, double _height, int _armRot, int _handRot);    // 
+	void setPosition(double _stretch, double _height, int _armRot, int _handRot);    //
+    void setHeight(double _stretch, double _height);
+    void rotateArmTo(int _armRot);
+    void rotateHandTo(int _handRot);
 	void setServoSpeed(char _servoNum, unsigned char _servoSpeed); // 0=full speed, 1-255 slower to faster
 	int readAngle(char _servoNum);
 	void gripperCatch();    //
